@@ -11,20 +11,24 @@ a {
 
 .header-container {
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;    
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     margin: 30px 60px;
     background: rgba(255, 255, 255, 0.9)
     z-index: 1000;
 }
+.left,.rigth {
+    flex:1;
+}
+.center {
+    text-align: center;
+    flex: 0;
+}
 .menu {
-    width: 30px;
-    position: absolute;
-    left: 0;
+    width: 24px;
 }
 .logo {
     width: 300px;
@@ -40,5 +44,18 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
+}
+.title {
+    font-family: Poppins-SemiBold;
+    font-size: 24px;
+    color: #0c474b;
+}
+.title-button {
+   padding: 12px 24px;
+   background-color: #0c474b;
+   border: none;
+   font-family: Poppins-SemiBold;
+   font-size: 16px;
+   color: #ffffff;
 }
