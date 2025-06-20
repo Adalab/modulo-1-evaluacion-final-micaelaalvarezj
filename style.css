@@ -6,9 +6,6 @@
 ul {
     list-style: none;
 }
-a {
-    text-decoration: none;
-}
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -21,6 +18,24 @@ a {
     display: flex;
     align-items: center;
     padding: 30px;
+}
+.green-title {
+    color:#0c474b;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
+}
+.subtitle-grid {
+    color: #0c474b;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
+}
+.text-grid {
+    color: #0c474b;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 16px;
 }
 .center {
     text-align: center;
@@ -42,12 +57,6 @@ a {
     align-items: center;
     gap: 100px;
 }
-.title {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 24px;
-    color: #0c474b;
-}
 .title-button {
    padding: 12px 24px;
    background-color: #0c474b;
@@ -65,10 +74,6 @@ a {
     grid-template-rows: 180px 150px 40px 120px 170px 80px 120px 170px 40px 120px;
 }
 .grid__item--first {
-    color:#0c474b;
-    font-family: "poppins";
-    font-weight: 600;
-    font-size: 24px;
     grid-row: 1;
     text-align: center;
     padding: 41px 60px;
@@ -80,19 +85,11 @@ a {
 .grid__item--third {
     grid-row: 3;
     text-align: center;
-    color: #0c474b;
-    font-family: "poppins";
-    font-weight: 600;
-    font-size: 24px;
 }
 .grid__item--fourth {
     grid-row: 4;
-    color: #0c474b;
     text-align: center;
-    font-family: "poppins";
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0px 120px;
+    padding: 0px 100px;
 }
 .grid__item--fifth {
     grid-row: 5;
@@ -101,20 +98,12 @@ a {
 .grid__item--sixth {
     grid-row: 6;
     text-align: center;
-    color: #0c474b;
-    font-family: "poppins";
-    font-weight: 600;
-    font-size: 24px;
     padding: 0px 103px;
 }
 .grid__item--seventh {
     grid-row: 7;
-    color: #0c474b;
     text-align: center;
-    font-family: "poppins";
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0px 140px;
+    padding: 0px 100px;
 }
 .grid__item--eighth {
     grid-row: 8;
@@ -123,17 +112,42 @@ a {
 .grid__item--ninth {
     grid-row: 9;
     text-align: center;
-    color: #0c474b;
-    font-family: "poppins";
-    font-weight: 600;
-    font-size: 24px;
 }
 .grid__item--tenth {
     grid-row: 10;
-    color: #0c474b;
     text-align: center;
+    padding: 0px 100px;
+}
+
+.second-content {
+    background-color: #ff975a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.truck {
+    padding-top: 46px;
+    padding-bottom: 20px;
+}
+.white-title {
+    color:#ffffff;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
+    padding: 20px;
+}
+.white-text {
+    color: #ffffff;
     font-family: "poppins";
     font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+}
+.link-second-content {
+    color:#ffffff;
+    font-family: "poppins";
+    font-weight: 600;
     font-size: 16px;
-    padding: 0px 130px;
+    text-decoration: underline;
+    padding: 48px;
 }
