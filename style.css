@@ -1,10 +1,14 @@
+/*Resetear formatos*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-ul {
+li {
     list-style: none;
+}
+a {
+    text-decoration: none;
 }
 .poppins-semibold {
   font-family: "Poppins", sans-serif;
@@ -12,6 +16,7 @@ ul {
   font-style: normal;
 }
 
+/*Header fijo*/
 .header-container {
     position: fixed;
     width: 100%;   
@@ -19,23 +24,13 @@ ul {
     align-items: center;
     padding: 30px;
 }
+
+/*Header movil*/
 .green-title {
     color:#0c474b;
     font-family: "poppins";
     font-weight: 600;
     font-size: 24px;
-}
-.subtitle-grid {
-    color: #0c474b;
-    font-family: "poppins";
-    font-weight: 600;
-    font-size: 24px;
-}
-.text-grid {
-    color: #0c474b;
-    font-family: "poppins";
-    font-weight: 400;
-    font-size: 16px;
 }
 .center {
     text-align: center;
@@ -51,13 +46,12 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 100px;
 }
-.title-button {
+.green-button {
    padding: 12px 24px;
    background-color: #0c474b;
    border: none;
@@ -66,12 +60,28 @@ ul {
    font-size: 16px;
    color: #ffffff;
 }
+button:hover {
+    background-color: black;
+}
 
+/*Estilos del grid*/
 .grid {
     background-color: #f0ebe5;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 180px 150px 40px 120px 170px 80px 120px 170px 40px 120px;
+}
+.subtitle-grid {
+    color: #0c474b;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
+}
+.text-grid {
+    color: #0c474b;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 16px;
 }
 .grid__item--first {
     grid-row: 1;
@@ -89,7 +99,7 @@ ul {
 .grid__item--fourth {
     grid-row: 4;
     text-align: center;
-    padding: 0px 100px;
+    padding: 0px 120px;
 }
 .grid__item--fifth {
     grid-row: 5;
@@ -103,7 +113,7 @@ ul {
 .grid__item--seventh {
     grid-row: 7;
     text-align: center;
-    padding: 0px 100px;
+    padding: 0px 130px;
 }
 .grid__item--eighth {
     grid-row: 8;
@@ -116,9 +126,10 @@ ul {
 .grid__item--tenth {
     grid-row: 10;
     text-align: center;
-    padding: 0px 100px;
+    padding: 0px 130px;
 }
 
+/*modulo 3*/
 .second-content {
     background-color: #ff975a;
     display: flex;
@@ -150,4 +161,80 @@ ul {
     font-size: 16px;
     text-decoration: underline;
     padding: 48px;
+}
+
+/*modulo 4*/
+.third-content {
+    background-color: #f0ebe5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.green-tinny-text {
+    color: #0c474b;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+}
+.title-third-content {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+.text-third-content {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.button-third-content {
+    padding-bottom: 80px;
+}
+.image-third-content {
+    width: 100%;
+    height: 100%;
+}
+
+/*Diseños del footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: #0c474b;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.title-footer {
+    color:#b6c8c9;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 20px;
+}
+.link-footer {
+    color:#b6c8c9;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 14px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.linkedin, .instagram, .twitter {
+    width: 21px;
+}
+.arrow-container {
+    background-color: #0c474b;
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+.icon-arrow {
+    width: 18px;
 }
