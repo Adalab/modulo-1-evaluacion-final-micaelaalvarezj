@@ -24,20 +24,20 @@ a {
     align-items: center;
     padding: 30px;
 }
-
-/*Header movil*/
-.green-title {
-    color:#0c474b;
-    font-family: "poppins";
-    font-weight: 600;
-    font-size: 24px;
-}
 .center {
     text-align: center;
     width: 100%;
 }
 .left {
     width: 24px;
+}
+
+/*Header movil*/
+.first-green-title {
+    color:#0c474b;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
 }
 .content {
     padding-top: 280px;
@@ -69,24 +69,44 @@ button:hover {
     background-color: #f0ebe5;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 150px 40px 120px 170px 80px 120px 170px 40px 120px;
+    grid-template-rows: repeat(10, auto);
+    padding: 40px 80px;
+}
+.second-green-title {
+    color:#0c474b;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
 }
 .subtitle-grid {
     color: #0c474b;
     font-family: "poppins";
     font-weight: 600;
     font-size: 24px;
+    margin: 10px;
 }
 .text-grid {
     color: #0c474b;
     font-family: "poppins";
     font-weight: 400;
     font-size: 16px;
+    padding: 0px 50px;
+}
+.icon-table {
+    width: 100px;
+    margin: 40px;
+}
+.icon-recicled {
+    width: 100px;
+    margin: 40px;
+}
+.icon-guide {
+    width: 100px;
+    margin: 40px;
 }
 .grid__item--first {
     grid-row: 1;
     text-align: center;
-    padding: 41px 60px;
 }
 .grid__item--second {
     grid-row: 2;
@@ -99,7 +119,6 @@ button:hover {
 .grid__item--fourth {
     grid-row: 4;
     text-align: center;
-    padding: 0px 120px;
 }
 .grid__item--fifth {
     grid-row: 5;
@@ -108,12 +127,10 @@ button:hover {
 .grid__item--sixth {
     grid-row: 6;
     text-align: center;
-    padding: 0px 103px;
 }
 .grid__item--seventh {
     grid-row: 7;
     text-align: center;
-    padding: 0px 130px;
 }
 .grid__item--eighth {
     grid-row: 8;
@@ -126,7 +143,6 @@ button:hover {
 .grid__item--tenth {
     grid-row: 10;
     text-align: center;
-    padding: 0px 130px;
 }
 
 /*modulo 3*/
@@ -170,6 +186,12 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+.third-green-title {
+    color:#0c474b;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 24px;
 }
 .green-tinny-text {
     color: #0c474b;
@@ -224,6 +246,7 @@ button:hover {
 .social {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
     gap: 15px;
 }
 .linkedin, .instagram, .twitter {
@@ -237,4 +260,88 @@ button:hover {
 }
 .icon-arrow {
     width: 18px;
+}
+
+@media screen and (min-width: 900px) {
+    .content{
+        align-items: flex-start;
+        padding-left: 100px;
+        gap: 20px;
+    }
+    .title-container{
+        width: 400px;
+    }
+    .first-green-title {
+        font-size: 36px;
+    }
+    .second-green-title {
+        padding: 10px 100px;
+    }
+    .subtitle-grid {
+    font-size: 20px;
+    }
+    .text-grid {
+        padding: 0px 20px;
+    }
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    }
+    .grid__item--first {
+    grid-column: 1/4;
+    text-align: center;
+    }
+    .grid__item--second {
+        grid-column: 1; 
+        grid-row: 2;
+        text-align: center;
+    }
+    .grid__item--third {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+    }
+    .grid__item--fourth {
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+    }
+    .grid__item--fifth {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+    }
+    .grid__item--sixth {
+        grid-column: 2;
+        grid-row: 3;
+        text-align: center;
+    }
+    .grid__item--seventh {
+        grid-column: 2;
+        grid-row: 4;
+        text-align: center;
+    }
+    .grid__item--eighth {
+        grid-column: 3;
+        grid-row: 2;
+        text-align: center
+    }
+    .grid__item--ninth {
+        grid-column: 3;
+        grid-row: 3;
+        text-align: center
+    }
+    .grid__item--tenth {
+        grid-column: 3;
+        grid-row: 4;
+        text-align: center
+    }
+    
+    .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 50px 0px;
+    }
 }
