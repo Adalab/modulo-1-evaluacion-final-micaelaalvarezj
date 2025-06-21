@@ -358,14 +358,20 @@ button:hover {
         display: flex;
         flex-direction: row;
         gap: 30px;
-        margin-left: 50px;
+        margin-left: 70px;
     }
     .container-links-menu {
         width: 10px;
     }
     .second-green-title {
     font-size: 36px;
-    padding: 20px 150px;
+    padding: 40px 200px;
+    }
+    .subtitle-grid {
+        padding: 0px 50px;
+    }
+    .text-grid {
+        padding: 0px 100px;
     }
     .icon-table {
     width: 100px;
@@ -379,4 +385,11 @@ button:hover {
     width: 100px;
     margin: 0px;
     }
-}
+    .container-third-content {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .image-third-content {
+        width: 50vw;
+    }
