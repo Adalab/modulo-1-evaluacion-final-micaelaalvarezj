@@ -1,24 +1,26 @@
+@use "../core/variables" as vars;
+
 .list-links-menu {
     display: none;
 }
 .link-second-content {
-    color:#ffffff;
-    font-family: "poppins";
+    color: vars.$secondLightColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 16px;
     text-decoration: underline;
     padding: 48px;
 }
 .link-footer {
-    color:#b6c8c9;
-    font-family: "poppins";
+    color: vars.$lightColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 400;
     font-size: 14px;
 }
 @media screen and (min-width: 1000px) {
     .links-menu {
-        color: #0c474b;
-        font-family: "poppins";
+        color: vars.$darkColorBrand;
+        font-family: vars.$mainFont;
         font-weight: 400;
         font-size: 16px;
     }

@@ -1,6 +1,8 @@
+@use "../core/variables" as vars;
+
 .first-green-title {
-    color:#0c474b;
-    font-family: "poppins";
+    color: vars.$darkColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 24px;
 }
@@ -18,39 +20,39 @@
 }
 .green-button {
    padding: 12px 24px;
-   background-color: #0c474b;
+   background-color: vars.$darkColorBrand;
    border: none;
-   font-family: "poppins";
+   font-family: vars.$mainFont;
    font-weight: 600;
    font-size: 16px;
-   color: #ffffff;
+   color: vars.$secondLightColorBrand;
 }
 button:hover {
     background-color: black;
 }
 .grid {
-    background-color: #f0ebe5;
+    background-color: vars.$lightColorBrand;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto);
     padding: 40px 80px;
 }
 .second-green-title {
-    color:#0c474b;
-    font-family: "poppins";
+    color: vars.$darkColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 24px;
 }
 .subtitle-grid {
-    color: #0c474b;
-    font-family: "poppins";
+    color: vars.$darkColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 24px;
     margin: 10px;
 }
 .text-grid {
-    color: #0c474b;
-    font-family: "poppins";
+    color: vars.$darkColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 400;
     font-size: 16px;
     padding: 0px 50px;
@@ -118,21 +120,21 @@ button:hover {
     padding-bottom: 20px;
 }
 .white-title {
-    color:#ffffff;
-    font-family: "poppins";
+    color: vars.$secondLightColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 24px;
     padding: 20px;
 }
 .white-text {
-    color: #ffffff;
-    font-family: "poppins";
+    color: vars.$secondLightColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 400;
     font-size: 14px;
     padding: 10px;
 }
 .third-content {
-    background-color: #f0ebe5;
+    background-color: vars.$lightColorBrand;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,14 +142,14 @@ button:hover {
     gap: 20px;
 }
 .third-green-title {
-    color:#0c474b;
-    font-family: "poppins";
+    color: vars.$darkColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 24px;
 }
 .green-tinny-text {
-    color: #0c474b;
-    font-family: "poppins";
+    color: vars.$darkColorBrand;
+    font-family: vars.$mainFont;
     font-weight: 400;
     font-size: 14px;
     text-align: center;
