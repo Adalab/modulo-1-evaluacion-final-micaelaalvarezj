@@ -1,0 +1,19 @@
+.header-container {
+    position: fixed;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.center {
+    text-align: center;
+    width: 100%;
+}
+.left {
+    width: 24px;
+}
+@media screen and (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+}
