@@ -4,13 +4,15 @@
     display: flex;
     align-items: center;
     padding: 30px;
-}
-.center {
+    
+    .center {
     text-align: center;
     width: 100%;
-}
-.left {
+    }
+    
+    .left {
     width: 24px;
+    }
 }
 @media screen and (min-width: 1728px) {
     .menu {

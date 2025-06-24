@@ -1,11 +1,5 @@
 @use "../core/variables" as vars;
 
-.first-green-title {
-    color: vars.$darkColorBrand;
-    font-family: vars.$mainFont;
-    font-weight: 600;
-    font-size: 24px;
-}
 .content {
     padding-top: 280px;
     background-image: url("../../public/images/header.jpg");
@@ -17,6 +11,12 @@
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    .first-green-title {
+        color: vars.$darkColorBrand;
+        font-family: vars.$mainFont;
+        font-weight: 600;
+        font-size: 24px;
+    }
 }
 .green-button {
    padding: 12px 24px;
@@ -26,16 +26,9 @@
    font-weight: 600;
    font-size: 16px;
    color: vars.$secondLightColorBrand;
-}
-button:hover {
-    background-color: black;
-}
-.grid {
-    background-color: vars.$lightColorBrand;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, auto);
-    padding: 40px 80px;
+   &:hover {
+     background-color: black;
+   }
 }
 .second-green-title {
     color: vars.$darkColorBrand;
@@ -68,6 +61,13 @@ button:hover {
 .icon-guide {
     width: 100px;
     margin: 40px;
+}
+.grid {
+    background-color: vars.$lightColorBrand;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    padding: 40px 80px;
 }
 .grid__item--first {
     grid-row: 1;
@@ -114,25 +114,27 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .truck {
+        padding-top: 46px;
+        padding-bottom: 20px;
+        }
+    .white-title {
+        color: vars.$secondLightColorBrand;
+        font-family: vars.$mainFont;
+        font-weight: 600;
+        font-size: 24px;
+        padding: 20px;
+    }
+    .white-text {
+        color: vars.$secondLightColorBrand;
+        font-family: vars.$mainFont;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px;
+    }
 }
-.truck {
-    padding-top: 46px;
-    padding-bottom: 20px;
-}
-.white-title {
-    color: vars.$secondLightColorBrand;
-    font-family: vars.$mainFont;
-    font-weight: 600;
-    font-size: 24px;
-    padding: 20px;
-}
-.white-text {
-    color: vars.$secondLightColorBrand;
-    font-family: vars.$mainFont;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 10px;
-}
+
 .third-content {
     background-color: vars.$lightColorBrand;
     display: flex;
@@ -140,23 +142,25 @@ button:hover {
     align-items: center;
     padding: 50px 50px;
     gap: 20px;
+    .title-third-content {
+        text-align: center;
+        .third-green-title {
+            color: vars.$darkColorBrand;
+            font-family: vars.$mainFont;
+            font-weight: 600;
+            font-size: 24px;
+        }
+    }
+    .green-tinny-text {
+        color: vars.$darkColorBrand;
+        font-family: vars.$mainFont;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+    }
 }
-.third-green-title {
-    color: vars.$darkColorBrand;
-    font-family: vars.$mainFont;
-    font-weight: 600;
-    font-size: 24px;
-}
-.green-tinny-text {
-    color: vars.$darkColorBrand;
-    font-family: vars.$mainFont;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-}
-.title-third-content {
-    text-align: center;
-}
+
+
 .image-third-content {
     width: 100%;
     height: auto;
@@ -167,12 +171,12 @@ button:hover {
         align-items: flex-start;
         padding-left: 100px;
         gap: 20px;
-    }
-    .title-container{
-        width: 400px;
-    }
-    .first-green-title {
-        font-size: 36px;
+        .title-container{
+            width: 400px;
+            .first-green-title {
+                font-size: 36px;
+            }
+        }
     }
     .second-green-title {
         padding: 10px 100px;
@@ -271,15 +275,15 @@ button:hover {
     .container-third-content {
         display: flex;
         flex-direction: row;
-    }
-    .third-content {
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .image-third-content {
-        width: 50vw;
+        .third-content {
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .image-third-content {
+            width: 50vw;
+        }
     }
 }
