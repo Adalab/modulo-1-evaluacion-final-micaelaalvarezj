@@ -238,16 +238,23 @@ button:hover {
         text-align: center
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1728px) {
+    .content {
+        padding: 800px 100px;
+    }
+    .grid {
+        padding: 150px 50px;
+    }
     .second-green-title {
     font-size: 36px;
-    padding: 40px 200px;
+    padding: 0px 400px;
+    padding-bottom: 100px;
     }
     .subtitle-grid {
-        padding: 0px 50px;
+        padding: 0px 160px;
     }
     .text-grid {
-        padding: 0px 100px;
+        padding: 0px 160px;
     }
     .icon-table {
     width: 100px;
